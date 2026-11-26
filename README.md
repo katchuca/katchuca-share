@@ -37,6 +37,13 @@
 
 ## Catálogo de Skills (`skill/`)
 
+| # | Skill | Versão | Resumo | Página no Hub |
+|:-:|:--|:--:|:--|:--|
+| 1 | [`slice-orchestration-governor`](./skill/slice-orchestration-governor/) | `v8.3.0` | Governador autônomo *Zero-Shadow* (Greenfield/Brownfield, TODO/CHANGELOG automáticos, `design-lint`, `secret-scan`) | [Abrir no hub](https://share.katchuca.workers.dev/r/slice-orchestration-governor) |
+| 2 | [`dev-team-orchestration`](./skill/dev-team-orchestration/) | `v3.0.0` | Construtor de **time de dev com 7 bots + Tech Lead** que se comunicam (**OpenMausBot**, **OpenBot**, **Grok Bot**, **Paperclip**, **OpenClaw**) | [Abrir no hub](https://share.katchuca.workers.dev/r/dev-team-orchestration) |
+
+---
+
 ### 1. [`slice-orchestration-governor`](./skill/slice-orchestration-governor/) — `v8.3.0`
 
 **Governador de engenharia autônoma Plug-and-Play para agentes de IA**, com classificação multilíngue de intenção, runtime global *Zero-Shadow*, playbooks Greenfield/Brownfield, auto-atualização de `TODO` / `CHANGELOG` / `MASTER`, preflight de navegador (`chrome://inspect/#remote-debugging` + Playwright), guarda anti-pill `AGY_UX_V2`, integridade Layer-2 de testes, self-repair limitado a 3 rodadas e varredura `secret-scan`.
