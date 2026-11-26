@@ -6,7 +6,7 @@
 
 [![Hub Oficial](https://img.shields.io/badge/Hub_Oficial-share.katchuca.workers.dev-54E2E7?style=for-the-badge&logo=cloudflareworkers&logoColor=151516)](https://share.katchuca.workers.dev)
 [![Licença](https://img.shields.io/badge/Licença-CC_BY--NC_4.0_(Não_Comercial)-F0AA3B?style=for-the-badge)](./LICENSE)
-[![Skills](https://img.shields.io/badge/Skills_Disponíveis-1-FF2D5A?style=for-the-badge)](./skill)
+[![Skills](https://img.shields.io/badge/Skills_Disponíveis-2-FF2D5A?style=for-the-badge)](./skill)
 
 [Acessar Hub & Desbloquear por Link](https://share.katchuca.workers.dev) · [Cursos & Ecossistema](https://share.katchuca.workers.dev/cursos) · [Apps & Jogos](https://share.katchuca.workers.dev/projetos) · [Artigos (Substack)](https://katchuca.substack.com/)
 
@@ -25,9 +25,9 @@
 
 | # | Pasta | O que você encontra aqui | Status |
 |:-:|:--|:--|:--|
-| 01 | [`skill/`](./skill/) | Skills instaláveis para agentes de IA (Antigravity, Claude Code, Cursor, Codex) | Ativo |
+| 01 | [`skill/`](./skill/) | Skills instaláveis para agentes de IA (Antigravity, OpenMausBot, OpenBot, Paperclip, Grok Bot, Claude Code, Cursor, Codex) | Ativo |
 | 02 | [`tool/`](./tool/) | Scripts, utilitários e automações práticas | Em expansão |
-| 03 | [`prompt/`](./prompt/) | Prompts estruturados e frameworks de engenharia de prompt | Em expansão |
+| 03 | [`prompt/`](./prompt/) | Prompts estruturados e frameworks de produção | Em expansão |
 | 04 | [`article/`](./article/) | Códigos e anexos dos ensaios no Substack | Em expansão |
 | 05 | [`course/`](./course/) | Materiais complementares e guias de estudo | Em expansão |
 | 06 | [`app/`](./app/) | Documentações públicas e demos de aplicativos | Em expansão |
@@ -41,7 +41,7 @@
 
 **Governador de engenharia autônoma Plug-and-Play para agentes de IA**, com classificação multilíngue de intenção, runtime global *Zero-Shadow*, playbooks Greenfield/Brownfield, auto-atualização de `TODO` / `CHANGELOG` / `MASTER`, preflight de navegador (`chrome://inspect/#remote-debugging` + Playwright), guarda anti-pill `AGY_UX_V2`, integridade Layer-2 de testes, self-repair limitado a 3 rodadas e varredura `secret-scan`.
 
-#### Instalação rápida direto do GitHub (sem precisar baixar ZIP manualmente)
+#### Instalação rápida direto do GitHub
 
 **Windows (PowerShell):**
 ```powershell
@@ -58,14 +58,34 @@ git clone --depth 1 --filter=blob:none --sparse https://github.com/katchuca/katc
 node ~/.gemini/config/skills/slice-orchestration-governor/scripts/install.mjs --non-interactive --bind-only --bind-project .
 ```
 
-> Pré-requisito: **Git** e **Node.js**. Veja todos os detalhes em [`skill/slice-orchestration-governor/INSTALL.md`](./skill/slice-orchestration-governor/INSTALL.md) ou na página dedicada em **[share.katchuca.workers.dev/r/slice-orchestration-governor](https://share.katchuca.workers.dev/r/slice-orchestration-governor)**.
+> Veja todos os detalhes em [`skill/slice-orchestration-governor/INSTALL.md`](./skill/slice-orchestration-governor/INSTALL.md) ou em **[share.katchuca.workers.dev/r/slice-orchestration-governor](https://share.katchuca.workers.dev/r/slice-orchestration-governor)**.
+
+---
+
+### 2. [`dev-team-orchestration`](./skill/dev-team-orchestration/) — `v3.0.0`
+
+**Construtor multiplataforma de time autônomo de 7 especialistas com Tech Lead**, preparado para **OpenMausBot**, **OpenBot**, **Paperclip**, **Grok Bot**, **OpenClaw** e runtimes agênticos CLI/MCP — provisiona Tech Lead, Arquiteto, Builder, UI/UX, Frontend, QA e Gate Auditor conversando entre si sob governança do Slice Governor v8.3.0.
+
+#### Instalação rápida direto do GitHub (Windows / macOS / Linux)
+
+**Windows (PowerShell):**
+```powershell
+git clone --depth 1 --filter=blob:none --sparse https://github.com/katchuca/katchuca-share.git "$env:TEMP\ks-team"; git -C "$env:TEMP\ks-team" sparse-checkout set skill/dev-team-orchestration; python "$env:TEMP\ks-team\skill\dev-team-orchestration\scripts\bind_project.py" --project-name "MeuProjeto" --project-path . --platform all; Remove-Item -Recurse -Force "$env:TEMP\ks-team"
+```
+
+**macOS / Linux (Terminal):**
+```bash
+git clone --depth 1 --filter=blob:none --sparse https://github.com/katchuca/katchuca-share.git /tmp/ks-team && git -C /tmp/ks-team sparse-checkout set skill/dev-team-orchestration && python3 /tmp/ks-team/skill/dev-team-orchestration/scripts/bind_project.py --project-name "MeuProjeto" --project-path . --platform all && rm -rf /tmp/ks-team
+```
+
+> Pré-requisitos: **Git**, **Python 3.10+** e **Node.js 18+**. Plataformas geradas em `.slices/team-adapters/` (`openmausbot`, `openbot`, `paperclip`, `grok-bot`, `generic`). Página no hub: **[share.katchuca.workers.dev/r/dev-team-orchestration](https://share.katchuca.workers.dev/r/dev-team-orchestration)**.
 
 ---
 
 ## Como usar este repositório
 
 1. **Instale direto via GitHub:** use os comandos de terminal acima para baixar somente a pasta da skill que deseja sem clonar arquivos desnecessários.
-2. **Explore arquivo por arquivo:** todas as pastas permanecem descompactadas no repositório para que você possa ler `SKILL.md`, `scripts/` e `references/` antes de instalar.
+2. **Explore arquivo por arquivo:** todas as pastas permanecem descompactadas no repositório para que você possa ler `SKILL.md`, `scripts/`, `roles/` e `references/` antes de instalar.
 3. **Precisa do `.zip` pronto?** Os pacotes `.zip` ficam disponíveis exclusivamente na aba **[Releases](https://github.com/katchuca/katchuca-share/releases)** e nos botões de download de **[share.katchuca.workers.dev](https://share.katchuca.workers.dev)**, mantendo as pastas do repositório limpas.
 
 ---
