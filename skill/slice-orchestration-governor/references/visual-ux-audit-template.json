@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 2,
+  "rubricVersion": "AGY_UX_V2",
+  "reviewMethod": "MULTIMODAL_SCREENSHOT_PLUS_DOM",
+  "visualArtifactsViewed": false,
+  "reviewedBy": "AUDITOR",
+  "referenceMode": "PROJECT_DESIGN_SYSTEM",
+  "referenceRefs": [],
+  "verdict": "NONE",
+  "surfaceModeApplied": false,
+  "tasteFilePath": null,
+  "designLintResult": "NOT_RUN",
+  "checks": {
+    "textWrapping": {
+      "status": "PENDING",
+      "note": ""
+    },
+    "clippingOverflow": {
+      "status": "PENDING",
+      "note": ""
+    },
+    "visualHierarchy": {
+      "status": "PENDING",
+      "note": ""
+    },
+    "spacingAlignment": {
+      "status": "PENDING",
+      "note": ""
+    },
+    "userLanguageJargon": {
+      "status": "PENDING",
+      "note": ""
+    },
+    "redundancyCognitiveLoad": {
+      "status": "PENDING",
+      "note": ""
+    },
+    "affordanceErgonomics": {
+      "status": "PENDING",
+      "note": ""
+    },
+    "designSystemConsistency": {
+      "status": "PENDING",
+      "note": ""
+    },
+    "responsiveBehavior": {
+      "status": "PENDING",
+      "note": ""
+    },
+    "contrastAccessibility": {
+      "status": "PENDING",
+      "note": ""
+    },
+    "aiSlopCleanCopy": {
+      "status": "PENDING",
+      "note": "U1-U8, U21-U22, clean prose, <=5 words captions"
+    },
+    "realStateVsFakeChrome": {
+      "status": "PENDING",
+      "note": "U6, U9-U11, U24 edge stripes, badges, dots"
+    }
+  },
+  "rewrittenStrings": [],
+  "keptOnPurpose": [],
+  "tasks": [],
+  "findings": [],
+  "summary": ""
+}

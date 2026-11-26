@@ -1,0 +1,16 @@
+SLICE ORCHESTRATION GOVERNOR / AGY BOT v8.3.0
+
+100% plug-and-play, Autonomia Total (zero iniciativa manual), Zero-Shadow global runtime e ZERO poluição no Git.
+
+- Windows: extraia o ZIP (ou clone do GitHub) e execute INSTALAR_WINDOWS.bat
+- macOS / Linux: bash INSTALAR_MAC_LINUX.sh
+- CLI direto (somente engine global): node scripts/install.mjs --non-interactive --global-only
+- Vincular ou atualizar um projeto existente:
+  node ~/.gemini/config/skills/slice-orchestration-governor/scripts/install.mjs --non-interactive --bind-only --bind-project <PASTA_DO_PROJETO>
+
+Novidades principais na v8.3.0:
+- Registro automático real em TODO + CHANGELOG + MASTER_SLICE_CHECKLIST (`dispatch` abre TODO, `handoff-verify` e `record` marcam como feito, gravam entrada estruturada no changelog e registram entregas fora de slice no Audit Log).
+- Correção da duplicação de tabela `CANONICAL_REQUIREMENTS_PROJECTION` no `MASTER_SLICE_CHECKLIST.md`.
+- Playbooks explícitos para **Projeto do Zero (Greenfield)** e **Projeto Existente (Brownfield)** com detecção automática (`lifecycle-probe`), geração de `AGENTS.md` Constitution (`scaffold-constitution`), `.slices/DESIGN_TASTE.md` (`design-taste-init`) e promoção de regras (`promote-rule`).
+- Guardrail determinístico Anti-Pill & Anti-Slop (`design-lint.mjs` com regras `U1`, `U9`, `U26` e `U26_DENSITY`).
+- Limpeza white-label 100% independente (zero referências a skills externas ou guias removidos da v7).
